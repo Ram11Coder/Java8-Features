@@ -1,2 +1,6 @@
 com/java8/basics/Basics.java
  com.java8.basics.Basics
+com/java8/lambdas/LambdaExample.java
+ com.java8.lambdas.LambdaExample
+ com.java8.lambdas.LambdaExample$1
+ com.java8.lambdas.LambdaExample$2

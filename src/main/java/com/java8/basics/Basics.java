@@ -13,20 +13,13 @@ import java.util.stream.IntStream;
  */
 public class Basics {
     public static void main(String[] args) {
-        //Imperative Approach
-    int sum=0;
 
-    for (int i=0;i<=100;i++){
-        sum+=i;
+        calculateSum();
+        uniqueList();
+
     }
-        System.out.println("Imperative Approach : "+sum);
 
-        //Declarative Approach
-
-        int result = IntStream.rangeClosed(0, 100).sum();
-        System.out.println("Declarative Approach : "+result);
-
-
+    private static void uniqueList() {
 
         //Removing duplicate values
 
@@ -44,5 +37,23 @@ public class Basics {
                 .distinct().collect(Collectors.toList());
 
         System.out.println("Unique List : "+unique1);
+    }
+
+    private static void calculateSum() {
+        //Imperative Approach
+        int sum=0;
+
+        for (int i=0;i<=100;i++){
+            sum+=i;
+        }
+        System.out.println("Imperative Approach : "+sum);
+
+        //Declarative Approach
+
+        int result = IntStream.rangeClosed(0, 100).sum();
+        System.out.println("Declarative Approach : "+result);
+
+
+
     }
 }
