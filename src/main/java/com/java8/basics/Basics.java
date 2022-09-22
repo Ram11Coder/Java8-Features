@@ -1,5 +1,9 @@
 package com.java8.basics;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
@@ -22,5 +26,23 @@ public class Basics {
         int result = IntStream.rangeClosed(0, 100).sum();
         System.out.println("Declarative Approach : "+result);
 
+
+
+        //Removing duplicate values
+
+        List<Integer> list= Arrays.asList(1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10);
+
+        //Imperative
+        List<Integer> unique=new ArrayList<>();
+        for (Integer integer: list){
+            if(!unique.contains(integer))
+                unique.add(integer);
+        }
+        System.out.println("Unique List : "+unique);
+        //Declarative
+        List<Integer> unique1 = list.stream()
+                .distinct().collect(Collectors.toList());
+
+        System.out.println("Unique List : "+unique1);
     }
 }
