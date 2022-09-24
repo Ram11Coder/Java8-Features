@@ -1,7 +1,10 @@
 package com.java8.data;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Supplier;
 
 public class Student {
     private String name;
@@ -10,12 +13,22 @@ public class Student {
     private String gender;
     List<String> activities = new ArrayList<>();
 
+    public static Supplier<Student> studentConsumer=() ->  new Student("Adam",2,3.6, "male", Arrays.asList("swimming", "basketball","volleyball"));
+
     public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities) {
         this.name = name;
         this.gradeLevel = gradeLevel;
         this.gpa = gpa;
         this.gender = gender;
         this.activities = activities;
+    }
+
+    public Student() {
+        
+    }
+
+    public Student(String name) {
+        this.name=name;
     }
 
     public String getGender() {
@@ -60,6 +73,9 @@ public class Student {
         this.activities = activities;
     }
 
+    public void printActivities(){
+        System.out.println(  activities);
+    }
     @Override
     public String toString() {
         return "Student{" +
