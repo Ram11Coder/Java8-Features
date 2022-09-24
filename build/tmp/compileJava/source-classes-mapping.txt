@@ -1,6 +1,44 @@
+com/java8/consumer/BinaryOPeratorExample.java
+ com.java8.consumer.BinaryOPeratorExample
+com/java8/consumer/PredicateExample.java
+ com.java8.consumer.PredicateExample
+com/java8/consumer/FunctionalExample.java
+ com.java8.consumer.FunctionalExample
 com/java8/basics/Basics.java
  com.java8.basics.Basics
+com/java8/consumer/UnaryOperatiorExample.java
+ com.java8.consumer.UnaryOperatiorExample
 com/java8/lambdas/LambdaExample.java
  com.java8.lambdas.LambdaExample
  com.java8.lambdas.LambdaExample$1
  com.java8.lambdas.LambdaExample$2
+com/java8/consumer/FunctionExample1.java
+ com.java8.consumer.FunctionExample1
+com/java8/methodreference/FunctionMethodReference.java
+ com.java8.methodreference.FunctionMethodReference
+com/java8/consumer/ConsumerExample.java
+ com.java8.consumer.ConsumerExample
+com/java8/consumer/PredicateStudents.java
+ com.java8.consumer.PredicateStudents
+com/java8/consumer/SupplierExample.java
+ com.java8.consumer.SupplierExample
+com/java8/methodreference/RefractorMethodReferenceExamaple.java
+ com.java8.methodreference.RefractorMethodReferenceExamaple
+com/java8/consumer/BiConsumerInterfaceExample.java
+ com.java8.consumer.BiConsumerInterfaceExample
+com/java8/consumer/PredicateAndConsumer.java
+ com.java8.consumer.PredicateAndConsumer
+com/java8/consumer/FunctionStudentExample.java
+ com.java8.consumer.FunctionStudentExample
+com/java8/constructorReference/ConstructorReferenceExamples.java
+ com.java8.constructorReference.ConstructorReferenceExamples
+com/java8/data/Student.java
+ com.java8.data.Student
+com/java8/methodreference/ConsumerMethodReference.java
+ com.java8.methodreference.ConsumerMethodReference
+com/java8/consumer/BiFunctionExample.java
+ com.java8.consumer.BiFunctionExample
+com/java8/data/StudentDataBase.java
+ com.java8.data.StudentDataBase
+com/java8/LamdaLocalVariable/LocalVarRestriction.java
+ com.java8.LamdaLocalVariable.LocalVarRestriction
