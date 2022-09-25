@@ -12,14 +12,14 @@ public class StreamSkipAndLimitExample {
     public static Optional<Integer> limit(List<Integer> list){
 
         return  list.stream()
-                .limit(2)
+                .limit(2) //1,2
                 .reduce(Integer::sum);
     }
 
     public static Optional<Integer> skip(List<Integer> list){
 
         return  list.stream()
-                .skip(2)
+                .skip(2)//3,4,5,6,7
                 .reduce(Integer::sum);
     }
     public static void main(String[] args) {
