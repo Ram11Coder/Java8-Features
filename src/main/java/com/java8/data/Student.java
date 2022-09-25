@@ -12,6 +12,7 @@ public class Student {
     private double gpa;
     private String gender;
     List<String> activities = new ArrayList<>();
+    private int noOfBooks;
 
     public static Supplier<Student> studentConsumer=() ->  new Student("Adam",2,3.6, "male", Arrays.asList("swimming", "basketball","volleyball"));
 
@@ -21,6 +22,15 @@ public class Student {
         this.gpa = gpa;
         this.gender = gender;
         this.activities = activities;
+    }
+
+    public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities,int noOfBooks) {
+        this.name = name;
+        this.gradeLevel = gradeLevel;
+        this.gpa = gpa;
+        this.gender = gender;
+        this.activities = activities;
+        this.noOfBooks=noOfBooks;
     }
 
     public Student() {
@@ -73,6 +83,14 @@ public class Student {
         this.activities = activities;
     }
 
+    public int getNoOfBooks() {
+        return noOfBooks;
+    }
+
+    public void setNoOfBooks(int noOfBooks) {
+        this.noOfBooks = noOfBooks;
+    }
+    
     public void printActivities(){
         System.out.println(  activities);
     }
