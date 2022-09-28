@@ -3,7 +3,7 @@ package com.java8.data;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Consumer;
+import java.util.Optional;
 import java.util.function.Supplier;
 
 public class Student {
@@ -13,8 +13,19 @@ public class Student {
     private String gender;
     List<String> activities = new ArrayList<>();
     private int noOfBooks;
+    private Optional<Bike> bike = Optional.empty();
 
-    public static Supplier<Student> studentConsumer=() ->  new Student("Adam",2,3.6, "male", Arrays.asList("swimming", "basketball","volleyball"));
+    public static Supplier<Student> studentConsumer = () -> new Student("Adam", 2, 3.6, "male", Arrays.asList("swimming", "basketball", "volleyball"));
+
+    public static Student getStudent() {
+        Bike bike = new Bike();
+        bike.setName("Pulsar");
+        bike.setModel("Bajaj");
+
+        Student student = new Student("Adam", 2, 3.6, "male", Arrays.asList("swimming", "basketball", "volleyball"));
+        student.setBike(Optional.of(bike));
+        return student;
+    }
 
     public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities) {
         this.name = name;
@@ -24,21 +35,29 @@ public class Student {
         this.activities = activities;
     }
 
-    public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities,int noOfBooks) {
+    public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities, int noOfBooks) {
         this.name = name;
         this.gradeLevel = gradeLevel;
         this.gpa = gpa;
         this.gender = gender;
         this.activities = activities;
-        this.noOfBooks=noOfBooks;
+        this.noOfBooks = noOfBooks;
+    }
+
+    public Optional<Bike> getBike() {
+        return bike;
+    }
+
+    public void setBike(Optional<Bike> bike) {
+        this.bike = bike;
     }
 
     public Student() {
-        
+
     }
 
     public Student(String name) {
-        this.name=name;
+        this.name = name;
     }
 
     public String getGender() {
@@ -74,7 +93,6 @@ public class Student {
     }
 
 
-
     public List<String> getActivities() {
         return activities;
     }
@@ -90,10 +108,11 @@ public class Student {
     public void setNoOfBooks(int noOfBooks) {
         this.noOfBooks = noOfBooks;
     }
-    
-    public void printActivities(){
-        System.out.println(  activities);
+
+    public void printActivities() {
+        System.out.println(activities);
     }
+
     @Override
     public String toString() {
         return "Student{" +
