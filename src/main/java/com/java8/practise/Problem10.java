@@ -16,8 +16,12 @@ public class Problem10 {
     }
 
     private static void sortDescending(List<Integer> list) {
+        System.out.println("First Approach");
         List<Integer> sortedList = list.stream().sorted().collect(Collectors.toList());
         Collections.reverse(sortedList);
         System.out.println(sortedList);
+        System.out.println("Second Approach ");
+        List<Integer> reverseOrder= list.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList());
+        System.out.println(reverseOrder);
     }
 }

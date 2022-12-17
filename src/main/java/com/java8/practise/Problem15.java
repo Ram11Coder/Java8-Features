@@ -9,7 +9,7 @@ public class Problem15 {
 
         List<Integer> list = Arrays.asList(1, 2, 3, 1, 3, 2);
 //Approach 1
-       // list.stream().collect(Collectors.toSet()).forEach(System.out::print);
+        // list.stream().collect(Collectors.toSet()).forEach(System.out::print);
 // Approach 2
         list.stream().distinct().forEach(System.out::print);
 

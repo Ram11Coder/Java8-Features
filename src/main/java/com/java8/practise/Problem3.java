@@ -8,13 +8,19 @@ import java.util.stream.Collectors;
  */
 public class Problem3 {
     public static void main(String[] args) {
-        List<Integer> list= Arrays.asList(23,1,12,23,15,144,34,16,34,25,22);
+        List<Integer> list = Arrays.asList(23, 1, 12, 23, 15, 144, 34, 16, 34, 25, 22);
 
-        findDuplicateElements(list);
+        findDuplicateElements1(list);
+        findDuplicateElements2(list);
     }
 
-    private static void findDuplicateElements(List<Integer> list) {
-        Set<Integer> set=new HashSet<>();
+    private static void findDuplicateElements2(List<Integer> list) {
+        list.stream()
+                .filter(e -> Collections.frequency(list, e) > 1).collect(Collectors.toSet()).forEach(System.out::println);
+    }
+
+    private static void findDuplicateElements1(List<Integer> list) {
+        Set<Integer> set = new HashSet<>();
         list.stream()
                 .filter(i -> !set.add(i)).forEach(System.out::println);
     }
