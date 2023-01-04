@@ -27,3 +27,7 @@
 - Find the prime number in the range | [Solution](https://github.com/Ram11Coder/Java8-Features/blob/main/src/main/java/com/java8/practise/Problem19.java)
 - First n prime number of square root | [Solution](https://github.com/Ram11Coder/Java8-Features/blob/main/src/main/java/com/java8/practise/Problem20.java)
 - Find the duplicate with their count in the list? | [Solution](https://github.com/Ram11Coder/Java8-Features/blob/main/src/main/java/com/java8/practise/Problem21.java)
+- Find the list of employees to increase the salary by 10% whose age is greater than 25 years |[Solution](https://github.com/Ram11Coder/Java8-Features/blob/main/src/main/java/com/java8/practise/Problem22.java)
+- Find the highest employee of each department | [Solution](https://github.com/Ram11Coder/Java8-Features/blob/main/src/main/java/com/java8/practise/Problem23.java)
+- Sort the Map By Value | [Solution](https://github.com/Ram11Coder/Java8-Features/blob/main/src/main/java/com/java8/practise/Problem24.java)
+- Find the second min and max element in the given list | [Solution](https://github.com/Ram11Coder/Java8-Features/blob/main/src/main/java/com/java8/practise/Problem25.java)
